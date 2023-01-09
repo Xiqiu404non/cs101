@@ -4,7 +4,6 @@ int main(){
     int k=128;
     int total=0;
     
-    
     while(1){
         if((i/k)==1){
             total=total+1;
