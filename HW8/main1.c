@@ -4,7 +4,6 @@ void print_spaces(int r){
     for(i = 1;i<=(r*2)-1;i++){
         printf(" ");
     }
-    
 }
 
 void print_stars(int r, int rows){
