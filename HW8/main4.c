@@ -10,7 +10,6 @@ void round_func(float f){
     }
     else if(a>=5){
         f=(f+10-a)/10;
-     
         printf("%.0f",f);
         
     }
