@@ -1,16 +1,26 @@
 #include <stdio.h>
+void print_spaces(int r){
+    int i;
+    for(i = 1;i<=(r*2)-1;i++){
+        printf(" ");
+    }
+    
+}
 
-int main(){
-    int number=10;
-    int a;
-    for(int i=1;i<number;i++){
-        for(int n=number;n>i;n--){
-            printf(" ");
-        }
-        for(a=1;a<=i;a++){
-            printf("* ");
-        }
-        
-         printf("\n");
-    }    
+void print_stars(int r, int rows){
+    int j;
+    for(j = 1;j<=(rows-r)*2+1;j++){
+        printf("* ");
+    }
+    printf("\n");
+}
+
+int main() {
+    int i;
+    int rows = 10;
+    for(int i = rows;i>=1;--i){
+        print_spaces(i);
+        print_stars(i, rows);
+    }
+    return 0;
 }
